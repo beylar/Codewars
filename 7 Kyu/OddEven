@@ -1,0 +1,32 @@
+/*Having a list of elements in an array, first i check if my array is not empty
+then iterate through its elements first checking if it is a number to  be able to calculate its sum
+then check if the sum of the elements is either even or odd
+
+*/
+function oddOrEven(array) {
+    let sum = 0;
+    if (array.length !== 0) {
+        for (let i = 0; i < array.length; i++) {
+            array[i] = Number(array[i])
+            sum += array[i]
+            //console.log(sum);
+        }      //if the modulus of the sum by 2 is 0 then it is even
+        if (sum % 2 === 0) {
+            return "even"
+
+        }
+        //if the modulus of sum by 2 is not 0 then it is Odd
+        else {
+            return "odd"
+        }
+
+        //if the element in the list is not a number then it is skipped
+    }
+    else {
+        return 'even';
+    }
+}
+console.log(oddOrEven([2, 4, 7, 12, 56]))
+console.log(oddOrEven([1, "al", 4]))
+console.log(oddOrEven([]))
+console.log(oddOrEven(["2", "5"]))
