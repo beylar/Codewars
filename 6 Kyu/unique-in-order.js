@@ -1,5 +1,8 @@
-var uniqueInOrder=function(iterable){
-  //your code here - remember iterable can be a string or an array
+/* Program is to remove dupliactes that are consecutive in the array
+first, i have to iterate through my array elements then have an if condition checking if my next element
+is not the same as the element that I am currently on 
+if not, i will push my element into the res array*/ 
+var uniqueInOrder = function(iterable){
   var res = []
    for ( let i=0; i < iterable.length; i++){
      if (iterable[i] !== iterable[i+1]){
