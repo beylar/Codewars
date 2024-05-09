@@ -31,3 +31,4 @@ class Cube {
 let msg = new Cube(10);
 console.log(msg.surfaceArea);
 console.log(msg.volume)
+console.log(msg.length)
