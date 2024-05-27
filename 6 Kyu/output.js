@@ -17,9 +17,11 @@ function whoLikes(array){
         if(array.length == 3){
             return `${array[i]}, ${array[i+1]} and ${array[i+2]} like this`
         }
-        // if(array.length >= 4 ){
-        //     return 
-        // }
+        if(array.length >= 4 ){
+            count = count + array.length;
+            count = count - 2;
+            return `${array[i]}, ${array[i+1]} and ${count} others like this`
+        }
     }
     return `no one like this`
 
@@ -29,3 +31,4 @@ console.log(whoLikes([]))
 console.log(whoLikes(["Peter"]))
 console.log(whoLikes(["Jacob", "Alex"]))
 console.log(whoLikes(["Jacob", "Alex", "Peter"]))
+console.log(whoLikes(["Jacob", "Alex", "Peter","nice","Jacob", "Alex"]))
