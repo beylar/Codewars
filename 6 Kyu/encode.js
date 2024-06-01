@@ -14,3 +14,5 @@ function encode(string){
 
 console.log(encode('hello'))
 console.log(decode('h2ll4'))
+console.log(encode('firstname'))
+console.log(encode("I love programming"))
