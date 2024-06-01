@@ -5,7 +5,7 @@
 function atomicNumber(num){
     //"What are we doing today, Brain?" "The same thing we did last week, Pinky... Take over the CodeWars"
     let atomic = [];
-    
+    // 1. can i implement the first values
 
 
     return atomic
@@ -15,3 +15,4 @@ console.log(atomicNumber(11))
 console.log(atomicNumber(1))
 console.log(atomicNumber(22))
 console.log(atomicNumber(47))
+console.log(atomicNumber(32))
