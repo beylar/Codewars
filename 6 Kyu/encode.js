@@ -8,8 +8,8 @@ function encode(string){
 
   return [...string].map(el => {return ( "aeiou".includes(el))?  "aeiou".indexOf(el) + 1 : el}).join('')}
 
-  function decode(string){
-    return [...string].map(el => {return ("12345".includes(el)) ? {'1':"a","2":"e","3":"i","4":"o","5":"u"}[el] : el}).join('')
+  function decode(str){
+    return [...str].map(el => {return ("12345".includes(el)) ? {'1':"a","2":"e","3":"i","4":"o","5":"u"}[el] : el}).join('')
   }
 
 console.log(encode('hello'))
