@@ -1,7 +1,7 @@
 function removeDuplicates(inputObj) {
     let newObj;
     for (let key in inputObj) {
-      let numericKey = Number(key);
+      //let numericKey = Number(key);
       let uniqueChars = new Set(inputObj[key]);
       console.log(uniqueChars)
       
@@ -13,11 +13,11 @@ function removeDuplicates(inputObj) {
   }
   
 
-  const inputTable = {
+  const input = {
     "1": ["A", "B", "C"],
     "2": ["A", "B", "D", "A"],
   };
   
-  const outputTable = removeDuplicates(inputTable);
+  const outputTable = removeDuplicates(input);
   console.log(outputTable);
   
