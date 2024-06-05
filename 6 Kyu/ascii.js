@@ -1,22 +1,16 @@
 function moreZeros(s){
     let binary = []
+    let result = []
     for(let i= 0; i<s.length; i++){
-      binary.push((s.charCodeAt(s[i])).toString(2))
+      binary.push((s.charCodeAt(i)).toString(2))
     }
-    let countOnes = 0;
-    let countZeros = 0;
-    for(let str of binary){
-        for (let char of str ){
-            if(char == '1'){
-                countOnes++;
-            }
-            else if(char == '0'){
-                countZeros++;
-            }
-        }
-    }
-    // console.log(countOnes);
-    // console.log(countZeros)
+    binary.map((el) => {
+    let chr = el.split("");
+    let countOnes = chr.filter((e) => e === "1").length;
+    let countZeros = chr.filter((e) => e === "0").length;
+    return countZeros > countOnes ? result.push(String.fromCharCode(parseInt(el,2))) : "" 
+})
+return [...new Set(result)]
 }
 
 console.log(moreZeros("abcde"))
