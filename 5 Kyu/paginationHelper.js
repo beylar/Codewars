@@ -14,7 +14,7 @@ class PaginationHelper {
 			// returns the number of pages
 		return Math.ceil(this.collection.length / this.itemsPerPage);
 	}
-	pageItemCount(page) {
+	pageItemCount(pageIndex) {
 		// returns the number of items on the current page. page_index is zero based.
 	// this method should return -1 for pageIndex values that are out of range
 		if (pageIndex < 0 || pageIndex >= this.pageCount()) {
