@@ -9,7 +9,7 @@ function checkParity(parity, bin){
 }
   console.log(checkParity('even',101010))//1
   console.log(checkParity('odd',101010))//0
-  console.log(checkParity('even',101011))//1
+  console.log(checkParity('even',101011))//0
   
 //split the given number and count the number of 1 to a sum to even or odd
 //then check if the parity is even add 0 else 1
