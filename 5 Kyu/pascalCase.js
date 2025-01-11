@@ -20,6 +20,6 @@ function toUnderscore(input) {
     return output;
 }
 
-console.log(toUnderscore(5));  // Output: 5
-console.log(toUnderscore("TestController"));  // Output: test_controller
-console.log(toUnderscore("Test5Controller"));  // Output: test5_controller
+console.log(toUnderscore(5));  // 5
+console.log(toUnderscore("TestController"));  // test_controller
+console.log(toUnderscore("Test5Controller"));  // test5_controller
