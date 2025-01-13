@@ -10,14 +10,16 @@ function meters(x) {
       { unit: "Zm", value: 1e21 },
       { unit: "Ym", value: 1e24 },
     ];
-  
+
     for (let i = prefixes.length - 1; i >= 0; i--) {
-      if (x >= prefixes[i].value) {
-        const scaledValue = (x / prefixes[i].value).toFixed(3).replace(/\.0+$/, "").replace(/\.$/, "");
-        return `${scaledValue}${prefixes[i].unit}`;
-      }
+        if (x >= prefixes[i].value) {
+            const scaledValue = (x / prefixes[i].value).toFixed(3);
+            const trimmedValue = scaledValue.replace(/\.0+$/, "") .replace(/\.$/, "");
+            //introducing parseFloat to remove all the trailing zeros for text cases
+            return `${parseFloat(trimmedValue)}${prefixes[i].unit}`;
+        }
     }
-  
+
     return "Invalid input"; 
 }
   
