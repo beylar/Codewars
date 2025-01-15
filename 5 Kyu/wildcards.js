@@ -22,3 +22,10 @@ function possibilities(str) {
 console.log(possibilities('101?'))
 console.log(possibilities('1?1?'))
 
+//option 2:
+/*
+const possibilities = (s) =>
+  s.includes("?")
+    ? [...possibilities(s.replace("?", "0")), ...possibilities(s.replace("?", "1"))]
+    : [s];
+*/
