@@ -22,7 +22,7 @@ function possibilities(str) {
 console.log(possibilities('101?'))
 console.log(possibilities('1?1?'))
 
-//option 2:
+//option 2: Using ternary operator
 /*
 const possibilities = (s) =>
   s.includes("?")
